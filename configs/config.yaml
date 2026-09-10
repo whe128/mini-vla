@@ -1,0 +1,36 @@
+vocab_size: 50257
+
+block_size: 256
+
+n_layer: 8
+
+n_head: 8
+
+n_embed: 256
+
+dropout: 0.0
+
+batch_size: 64
+
+gradient_accumulation_steps: 1
+
+learning_rate: 0.0003
+
+weight_decay: 0.1
+
+eval_interval: 100
+
+save_interval: 500
+
+train_val_split: 0.9
+
+seed: 42
+
+image_size: 224
+image_dim: 256
+patch_size: 16
+
+action_dim: 7
+max_text_len: 20
+
+num_epochs: 30
