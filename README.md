@@ -1,4 +1,7 @@
 # MiniVLA
+<div align="center">
+<img width="889" height="500" alt="搜狗截图20260911192000" src="https://github.com/user-attachments/assets/177c7e21-999e-4ae4-b125-b03695a89286" />
+<div>
 
 A lightweight Vision-Language-Action (VLA) system for robot manipulation using **PyTorch**, **MuJoCo**, and a custom MiniGPT-based Transformer.
 
