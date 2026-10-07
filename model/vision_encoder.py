@@ -27,6 +27,8 @@ class VisionEncoder(nn.Module):
             stride = patch_size
         )
 
+        self.pos_embedding = nn.Parameter(torch.zeros(1, self.num_patches, image_dim))
+
     def forward(self, x):
         # input x: [batch, channels, height, width]
         # output x: [batch, num_patches, image_dim]
@@ -43,6 +45,9 @@ class VisionEncoder(nn.Module):
         # put the dim at the last dimension
         # [batch, image_dim, num_patches] -> [batch, num_patches, image_dim]
         x = x.transpose(1, 2)
+
+        # add the positional embedding
+        x = x + self.pos_embedding
 
         return x
 
